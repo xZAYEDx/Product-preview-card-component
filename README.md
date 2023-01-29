@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-product-card-using-flexbox-HN6l6WS4le)
+- Live Site URL: [Product preview card component](https://frmentor-product-preview-card-comp.netlify.app/)
 
 ## My process
 
