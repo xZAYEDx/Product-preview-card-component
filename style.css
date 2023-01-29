@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/*@import url("https://unpkg.com/open-props");*/
+
+/* css variables set up */
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan-dark: hsl(158, 92%, 10%);
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-color: var(--Cream);
+}
+
+/*** FOOTER ***/
+footer > .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+    }
+
+    footer {
+    display: block;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1px;
+    }
+    footer>.attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    footer>.attribution a {
+        color: hsl(228, 45%, 44%);
+        font-size: 11px;
+    }
+
+.product-card{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    margin: 28px 16px;
+    width: 343px;
+    height: 611px;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.product-card>.mobile-img{
+    width: 343px;
+    height: 241px;
+    
+}
+
+.product-card>.desktop-img{
+    display: none;
+}
+
+.product-card>h1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    position: absolute;
+width: 92px;
+height: 12px;
+left: 35px;
+top: 265px;
+padding: 5px;
+letter-spacing: 5px;
+}
+.product-card>p.mobile-p{
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.82rem;
+    position: absolute;
+width: 293px;
+height: 81px;
+left: 40px;
+top: 378px;
+/*padding: 1rem;*/
+line-height: 1.4rem;
+letter-spacing: 0.5px;
+}
+.product-card>p.desktop-p{
+    display: none;
+}
+
+.product-card>h2.mobile-h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    position: absolute;
+/*padding: 0.2rem;*/
+width: 278px;
+height: 58px;
+left: 35px;
+top: 300px;
+letter-spacing: 1.7px;
+}
+
+
+.product-card>h2.desktop-h2{
+    display: none;
+}
+
+.product-card>h3{
+font-family: 'Fraunces', serif;
+font-weight: 700;
+font-size: 2.1rem;
+color: var(--Dark-cyan);
+position: absolute;
+padding-left: 0.7rem;
+width: 192px;
+height: 29px;
+left: 28px;
+top: 480px;
+}
+.product-card>h3>.original-price{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+  position: absolute;
+  top: 13px;
+  left: 160px;
+  
+}
+
+button{
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    width: 295px; /*298*/
+    height: 48px;
+    padding: 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13x;
+    margin-top: 18.5rem;
+    margin-left: 25px;
+    margin-right: 20px;
+    border-radius: 0.6rem;
+
+    }
+
+    button:hover{
+    cursor: pointer;
+    transition: 5s;
+    transition: all 1000ms ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px var(--Dark-cyan);
+    background-color: var(--Dark-cyan-dark);
+    }
+button>img.cart{
+padding: 0%;
+margin-right: 6.8em;
+}
+
+
+button>.btn-text{
+    position: absolute;
+    top: 1.1em;
+    left: 9em;
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+/* Mdeium device*/
+@media (min-width: 425px){
+    .product-card{
+        width: 373px;
+        margin: 28px 26px;
+    }
+
+    .product-card>.mobile-img{
+        width: 373px;
+    }
+    .product-card>p.mobile-p{
+    left: 54px;
+    }
+    .product-card>h1{
+    left: 45px;
+    }
+    .product-card>h2.mobile-h2{
+    left: 35px;
+    font-size: 1.75rem;
+    left: 50px;
+    letter-spacing: 1.7px;
+    }
+    .product-card>h3{
+    left: 41px;
+    }
+
+    button{
+    width: 320px;
+    height: 50px;
+    }
+
+    button>img.cart{
+        margin-right: 8em;
+        }
+    button>.btn-text{
+        left: 9.5em;
+        font-size: 1em;
+    }
+}
+
+/* Tablet view */
+
+@media (min-width: 768px){
+    .product-card{
+    display: flex;
+    flex-direction: row;
+    width: 714px;
+    height: 611px;
+    height: 580px;
+    }
+    .product-card>.mobile-img{
+        display: none;
+    }
+    .product-card>.desktop-img{
+        display: block;
+        width: 357px;
+    }
+
+    .product-card>h1{
+        left: 26rem;
+        top: 40px;
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .product-card>h2.mobile-h2{
+        display: none;
+    }
+
+    .product-card>h2.desktop-h2{
+        display: inline-block;
+        position: absolute;
+        top: 2.5em;
+        left: 26rem;  
+        font-size: 2.5rem;
+        padding: 0;
+        line-height: 1em;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .product-card>h3{
+        font-size: 2.4rem;
+        position: absolute;
+        padding-left: 0.2rem;
+        width: 192px;
+        height: 29px;
+        left: 10.6em;
+        top: 10.3em;
+        }
+    .product-card>h3>.original-price{
+        font-size: 1rem;
+        left: 11rem;
+    }
+
+    .product-card>p.mobile-p{
+       display: none;
+        }
+    .product-card>p.desktop-p{
+    display: block;
+    position: absolute;
+    left: 26em;
+    top: 16em;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 293px;
+    height: 81px;
+    line-height: 1.6rem;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    }
+    button{
+    margin-top: 30rem;
+    padding: 33px 14px;
+    position: relative;
+    }
+    button>img.cart{
+    position: absolute;
+    right: 7.5em;
+    top: 1.6em;
+    width: 1.6em;
+    height: 1.6em;
+    }
+        button>.btn-text{
+            left: 7em;
+            top: 1.2em;
+            font-size: 1.3em;
+        }
+}
+
+/* Desktop view */
+
+@media (min-width: 1024px){
+    .product-card{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    margin: 5rem auto;
+    }
+    .product-card>.desktop-img{
+    width: 18.75rem;
+    height: 28.125;
+    }
+    .product-card>h1{
+    font-size: 0.8rem;
+    color: var(--Dark-grayish-blue);
+    position: absolute;
+    left: 20rem;
+    top: 2rem;
+    }
+    .product-card>h2.desktop-h2{
+    display: inline-block;
+    position: absolute;
+    top: 2.1em;
+    left: 20.3rem;  
+    font-size: 2rem;
+    }
+    .product-card>p.desktop-p{
+        display: block;
+        position: absolute;
+        left: 22.8em;
+        top: 13em;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2px;
+        word-spacing: 1px;
+        }
+        .product-card>h3{
+            font-size: 2rem;
+            position: absolute;
+            padding: 0;
+            left: 10.2em;
+            top: 9.5em;
+            }
+        .product-card>h3>.original-price{
+            font-size: 0.9rem;
+            left: 9rem;
+        }
+        button{
+        width: 236px;
+        height: 48px;
+        }
+        button{
+            margin-top: 23rem;
+            padding: 0.9rem 0.8rem;
+            position: relative;
+            width: 236px;
+            height: 48px;
+            }
+            button>img.cart{
+            position: absolute;
+            right: 3.6em;
+            top: 1.1em;
+            width: 1.3em;
+            height: 1.3em;
+            }
+            button>.btn-text{
+            left: 7em;
+                    top: 1.2em;
+                    font-size: 1em;
+                }
+}
+
+@media (min-width: 1440px){
+    .product-card{
+        width: 600px;
+        height: 450px;
+        margin: 8rem auto;
+    }
+}
